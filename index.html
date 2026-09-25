@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>人像写真提示词库 · 106 种创作灵感</title>
+<meta name="description" content="探索 106 种人像写真风格，按场景、景别和平台快速筛选、复制提示词。">
+<meta name="theme-color" content="#f3efe8">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/styles.css">
+<script>
+(function(){try{
+  var t = localStorage.getItem('pp-theme');
+  if(t !== 'dark' && t !== 'light'){
+    t = (window.matchMedia && matchMedia('(prefers-color-scheme:dark)').matches) ? 'dark' : 'light';
+  }
+  document.documentElement.dataset.theme = t;
+}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#s4">跳转到风格库</a>
+<div id="prog" aria-hidden="true"></div>
+<div class="wrap">
+
+<header class="top">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="brand-mark">P.</span> PORTRAIT PROMPT ATLAS <span class="eyebrow-rule"></span> 2026 EDITION</div>
+    <p class="hero-kicker">给每一种光，找到它的文字。</p>
+    <h1>人像写真<br><em>提示词库</em></h1>
+    <p class="sub">从场景、光线到镜头语言，收录 106 种人像创作灵感。为 OpenAI、Nano Banana 与即梦整理，一键找到并复制适合你的提示词。</p>
+    <a class="hero-cta" href="#filter">探索风格库 <span aria-hidden="true">↗</span></a>
+    <div class="hero-meta"><span><b>106</b> 风格提示词</span><span><b>03</b> 创作平台</span><span><b>07</b> 修图模板</span></div>
+  </div>
+  <div class="hero-visual" aria-label="人像摄影风格视觉示意">
+    <figure class="hero-main"><img src="/assets/editorial-hero.webp" alt="暖色窗光下的人像摄影视觉示意" fetchpriority="high"><figcaption>光影、姿态与故事 · 视觉示意</figcaption></figure>
+    <figure class="hero-side hero-side-one"><img src="/assets/editorial-city.webp" alt="雨夜街头人像视觉示意" loading="lazy"><figcaption>STUDY 01 / CITY</figcaption></figure>
+    <figure class="hero-side hero-side-two"><img src="/assets/editorial-together.webp" alt="户外双人人像视觉示意" loading="lazy"><figcaption>STUDY 02 / TOGETHER</figcaption></figure>
+  </div>
+</header>
+
+<nav class="topbar" id="topbar">
+  <a href="#s4">风格库 <small>106</small></a>
+  <a href="#s5">修图模板</a>
+  <a href="#s1">平台差异</a>
+  <a href="#s2">写法公式</a>
+  <a href="#s6">锁脸一致性</a>
+  <a href="#s7">坑与限制</a>
+</nav>
+
+<!-- ========== 1 风格库 106 条 ========== -->
+<section id="s4">
+  <div class="section-heading"><div><span class="section-index">01 / THE LIBRARY</span><h2>探索人像风格</h2></div><span class="section-aside">从灵感出发，落到可复制的文字。</span></div>
+  <div class="lead">女性 70 · 男性 25 · 双人多人 8 · 证件头像 3。提示词为自然语言句式，三平台通用；镜头与胶片型号保留英文更准。可按<b>景别</b>从大特写一路筛到环境人像。</div>
+
+  <div class="filter-panel" id="filter">
+    <button class="fToggle" id="fToggle" type="button" aria-expanded="true">
+      筛选条件<span class="fSum" id="fSum">全部</span><span class="fCaret" aria-hidden="true">▾</span>
+    </button>
+    <div class="frow">
+      <span class="lab">平台</span>
+      <button class="chip on" data-f="plat" data-v="all">全部平台</button>
+      <button class="chip" data-f="plat" data-v="oai">OpenAI</button>
+      <button class="chip" data-f="plat" data-v="nb">Nano Banana</button>
+      <button class="chip" data-f="plat" data-v="jm">即梦</button>
+      <label class="chkwrap dis" id="chkwrap"><input type="checkbox" id="onlyStar" disabled>只看该平台优势场景</label>
+    </div>
+    <div class="frow">
+      <span class="lab">性别</span>
+      <button class="chip on" data-f="sex" data-v="all">全部</button>
+      <button class="chip" data-f="sex" data-v="f">女性 70</button>
+      <button class="chip" data-f="sex" data-v="m">男性 25</button>
+      <button class="chip" data-f="sex" data-v="c">双人多人 8</button>
+      <button class="chip" data-f="sex" data-v="id">证件头像 3</button>
+    </div>
+    <div class="frow">
+      <span class="lab">类型</span>
+      <button class="chip on" data-f="cat" data-v="all">全部</button>
+      <button class="chip" data-f="cat" data-v="日常">日常</button>
+      <button class="chip" data-f="cat" data-v="街头">街头</button>
+      <button class="chip" data-f="cat" data-v="室内">室内</button>
+      <button class="chip" data-f="cat" data-v="户外">户外旅行</button>
+      <button class="chip" data-f="cat" data-v="古风">古风国风</button>
+      <button class="chip" data-f="cat" data-v="影棚">影棚</button>
+      <button class="chip" data-f="cat" data-v="氛围">光影氛围</button>
+      <button class="chip" data-f="cat" data-v="家庭">家庭双人</button>
+      <button class="chip" data-f="cat" data-v="证件">证件头像</button>
+    </div>
+    <div class="frow">
+      <span class="lab">景别</span>
+      <button class="chip on" data-f="shot" data-v="all">全部</button>
+      <button class="chip" data-f="shot" data-v="大特写">大特写</button>
+      <button class="chip" data-f="shot" data-v="特写">特写</button>
+      <button class="chip" data-f="shot" data-v="近景">近景</button>
+      <button class="chip" data-f="shot" data-v="中近景">中近景</button>
+      <button class="chip" data-f="shot" data-v="中景">中景 · 半身</button>
+      <button class="chip" data-f="shot" data-v="全身">全身</button>
+      <button class="chip" data-f="shot" data-v="环境">环境人像</button>
+    </div>
+    <div class="frow" id="qrow">
+      <span class="lab">搜索</span>
+      <input id="q" type="search" placeholder="输入关键词，如 胶片、霓虹、婚纱、伦勃朗、雪……" aria-label="搜索提示词">
+      <span id="count" aria-live="polite">共 106 条</span>
+      <button class="chip act" id="copyAll" type="button" title="复制当前筛选出的全部提示词">复制结果</button>
+      <button class="chip act" id="reset" type="button" title="清空搜索与筛选条件（按 R 键同效）">重置</button>
+    </div>
+    <div class="tipbox" id="tipbox"></div>
+    <div class="note" style="margin:12px 0 0;">选平台＝切换该平台的写法要点；勾选开关＝只保留该平台优势场景；景别＝按取景范围筛选。</div>
+  </div>
+
+  <!-- ---------- 女性 ---------- -->
+  <div class="cat-group" data-sex="f">
+  <h3>女性人像 <span class="hint">70 条 · 前缀 F</span></h3>
+
+  <article class="style-card f" data-sex="f" data-cat="日常">
+    <div class="card-h"><span class="t">F01 · 春日野餐</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位二十多岁的女孩坐在格纹野餐垫上，正把一颗草莓递向镜头，自然微笑，穿米色针织衫与牛仔裙，微风拂动发丝。低角度的午后阳光从她侧后方照来，穿过薄纱衣袖留下半透明的透光边缘，发丝被逆光勾出细金线，草坡上草叶纹理清晰，篮子里散着面包与玻璃瓶，85mm 镜头，浅景深，柔和粉彩调，竖版 4:5。</pre></div>
+    <div class="note">要点是<b>光要有方向</b>（低角度斜射的逆光）+ <b>一个具体动作</b>（递草莓）。三家都吃这一套。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F02 · 夜街 CCD 直闪</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>照片级写实的夜晚商业街全身人像，一位二十多岁的女性随性站在拉下一半卷帘门的店铺前，穿短外套与直筒牛仔裤，神情自然放松，不直视镜头。柔和 CCD 数码相机质感，轻微泛白与细腻颗粒，强烈高光溢出和光晕，街灯与霓虹虚化成散景，浅景深，肤色通透自然，9:16 竖构图，千禧年数码相机美学。</pre></div>
+    <div class="note">CCD 感 = <b>轻微泛白 + 高光溢出 + 颗粒</b>，三个缺一就沦为普通夜景。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="氛围">
+    <div class="card-h"><span class="t">F03 · 复古港风</span><span class="tag f">女</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位九十年代港风女性，大波浪卷发，红唇，穿黑色丝绒旗袍，坐在复古餐厅卡座里手持旧式电话，眼神慵懒。暖黄钨丝灯光，暗调氛围，胶片颗粒感，电影质感，8K 高清。</pre></div>
+    <div class="note"><b>「胶片颗粒感 + 暗调氛围」是港风的底色</b>。Nano Banana 上加 <code>film noir</code> 会更浓；即梦上可加「复古港片」触发年代联想。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="日常">
+    <div class="card-h"><span class="t">F04 · 都市通勤</span><span class="tag f">女</span><span class="tag">日常</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位都市白领女性走在写字楼玻璃幕墙前，穿米白色廓形大衣与西装裤，手提电脑包，步伐从容，不直视镜头。清晨偏冷的侧光，玻璃幕墙上映出模糊城市倒影，冷灰蓝调，50mm 镜头，全身入镜，建筑摄影感的构图层次，4:5 竖版。</pre></div>
+    <div class="note">都市感来自<b>「冷调 + 硬质建筑反光」</b>，别用暖光，一暖就变成度假照。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F05 · 咖啡馆下午茶</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女孩坐在咖啡馆靠窗位置，双手捧着拿铁，低头轻啜，睫毛在脸颊投下细影。大面积窗光从左前方柔和照入，桌面有木纹与方糖罐，背景是虚化的绿植与暖色壁灯，浅景深，35mm 环境人像，暖调通透，皮肤质感真实。</pre></div>
+    <div class="note">室内人像的生机来自<b>「窗光方向 + 桌面小道具」</b>，空手坐着最像摆拍。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F06 · 书店 / 图书馆</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性站在高书架前抽出书本，低头翻看，穿卡其色衬衫。头顶暖色射灯与远处窗外冷光形成冷暖对比，书架上的书脊文字模糊但可辨认，空气里有细微浮尘在光束中显现，克莱因蓝与暖木色调并存，50mm 镜头，半身构图，安静的氛围。</pre></div>
+    <div class="note">加一句<b>「光束中的浮尘」</b>，画面立刻有空气感，这是最省力的高级感写法。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F07 · 天台日落</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性站在城市天台边缘，侧身回望，长发被晚风吹起，穿深色连衣裙。逆光的落日在她发梢与肩膀勾出一圈金色轮廓光，背景是虚化的城市天际线与远处楼宇灯光，青橙色调，85mm 镜头，浅景深，画面有轻微的空气雾感，竖版 4:5。</pre></div>
+    <div class="note">逆光人像的关键是<b>轮廓光（rim light）</b>，明确写出来，否则脸会变成剪影。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F08 · 海边度假</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性赤脚走在海边浅水中，穿白色亚麻长裙，裙摆被海风吹起，回头笑着看向镜头。黄金时刻的低角度阳光从侧后方照来，皮肤上有温暖的琥珀色高光，海面有细碎反光，背景是柔和的散景海平线，真实皮肤纹理与细小沙粒，4:5 竖版。</pre></div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F09 · 雪景冬日</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性站在落雪的松林中，戴针织帽与厚围巾，双手捧着，呼出白色雾气，睫毛上落着细雪。阴天的漫射光（云层像巨大的柔光箱），几乎没有硬阴影，冷蓝白调，背景雪地留白，85mm 镜头，浅景深，肤色调向自然的暖色以形成冷暖对比。</pre></div>
+    <div class="note">雪景必须<b>主动要求暖肤色</b>，否则模型会把脸也一起冻成青白色，人显得病态。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F10 · 雨中街拍</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性撑着透明雨伞走在雨夜街道上，穿风衣，脚步带起细碎水花。湿漉漉的地面映出霓虹倒影，背景是虚化的红绿灯与店铺招牌光斑，侧逆光在伞面与发丝上形成明亮边缘，冷青与暖橙对比，35mm 镜头，浅景深，轻微雨丝可见。</pre></div>
+    <div class="note">透明伞是雨天街拍的解题关键——<b>挡雨但不挡光</b>，脸不会暗掉。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F11 · 花海 / 油菜花田</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性站在盛开的黄色花田中，低头轻嗅花朵，穿浅蓝色连衣裙。约 35 度的顶光经云层柔化，脸庞明亮通透，画面下方大面积花丛形成前景，花朵纹理清晰、边缘轻微虚化，远山虚化成浅色背景，暖黄与浅蓝互补，50mm 镜头，4:5 竖版。</pre></div>
+    <div class="note">花海容易过饱和。<b>主动写「顶光经云层柔化」</b>，避免硬光下花朵变成色块。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="日常">
+    <div class="card-h"><span class="t">F12 · 校园青春</span><span class="tag f">女</span><span class="tag">日常</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女生抱着课本走在教学楼的长廊里，穿白色衬衫与百褶裙，阳光从侧面一排窗户斜射进来，在磨石地面上投下一组规律的方形光斑，她的影子被拉长。逆光使发丝边缘泛金，背景是虚化的走廊尽头绿树，清新明亮，35mm，低饱和高明度的胶片通透感。</pre></div>
+    <div class="note"><b>「一排窗户在地面投下的规律光斑」</b>是校园走廊的签名式画面，写出来立刻有场景感。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F13 · 居家生活感</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>写实居家人像，一位女性坐在木质书桌前写着什么，穿宽松针织衫，嘴角带自然微笑。木纹桌面清晰可见，针织衫的线圈纹理分明，台灯暖光从左侧打亮，她左脸明亮、右脸略暗，桌角放着一杯冒着热气的茶，背景书架上的书脊文字模糊但可辨认，8K 高清。</pre></div>
+    <div class="note">真实感的秘诀是<b>给每个物体加一个具体物理细节</b>——木纹、线圈、热气、书脊文字。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F14 · 瑜伽 / 居家运动</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性在落地窗前做瑜伽的伸展动作，穿浅灰色运动内衣与瑜伽裤，身体线条舒展。清晨的柔和侧光从左后方照入，在皮肤与地面投下自然的肌肉阴影，窗外是虚化的城市晨景，木地板纹理清晰，50mm 镜头，全身体态可见，健康自然的肤色与真实皮肤纹理。</pre></div>
+    <div class="note">运动人像要<b>写清光线方向</b>，否则肌肉线条会被平光抹掉，看起来没在用力。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F15 · 晨跑街拍</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性在清晨空荡的城市街道上慢跑，穿浅色运动套装，耳机线随动作轻晃，额头有细微汗光。低角度的晨光从侧面穿过楼宇间隙，在路面留下长长的建筑阴影，背景是虚化的街道与早点摊蒸气，手臂与腿部有轻微动态模糊，冷调晨光配暖肤，35mm 纪实感。</pre></div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F16 · 机车女孩</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性侧坐在黑色复古机车上，穿黑色皮夹克与工装靴，单手搭在车把上，眼神低垂。黄昏的侧逆光在她皮衣表面形成细长高光与硬质阴影，机车金属件有真实的划痕与哑光质感，背景是虚化的停车场或厂房，冷调背景配暖色轮廓光，50mm，4:5 竖版。</pre></div>
+    <div class="note">皮衣 + 金属的质感全靠<b>「细长高光 + 硬阴影 + 划痕」</b>三件套，只写「皮衣」会出塑料感。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="古风">
+    <div class="card-h"><span class="t">F17 · 汉服古风</span><span class="tag f">女</span><span class="tag">古风</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>中式国风人像，一位女子身着唐制齐胸襦裙，发髻配点翠发簪，妆容古典，站在宫墙红墙与长廊之间侧身回眸，柔和侧光在廊柱上投下长影，衣料有丝绸的垂坠光泽与细密暗纹，色调典雅大气，工笔质感，高清精致，竖版 3:4。</pre></div>
+    <div class="note">古风容易出「影楼感」，压住它的办法是<b>指定光线方向和建筑细节</b>（宫墙红、廊柱长影），而不是堆「仙气」。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="古风">
+    <div class="card-h"><span class="t">F18 · 新中式旗袍</span><span class="tag f">女</span><span class="tag">古风</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性身着素色提花旗袍走在园林中，穿过月洞门时侧身停步，手持折扇半掩面容。柔和的天光从斜上方照入，旗袍上的提花在侧光下显出明暗变化，身后是白墙、漏窗与修长的竹影，青灰与米白为主调，质感克制典雅，85mm 镜头，竖版 3:4。</pre></div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="古风">
+    <div class="card-h"><span class="t">F19 · 提灯夜游</span><span class="tag f">女</span><span class="tag">古风</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>中式国风夜景人像，一位女子身着浅青色对襟襦裙，走在元宵灯会的长廊下，一手提一盏暖色宫灯，另一手轻提裙摆，下半脸被灯笼从下方照亮。暖橙色的灯笼光是她面部的主要光源，背景是虚化的悬空灯串与游人剪影，飞檐与红柱在暗部只留轮廓，暖黄与深蓝夜色形成对比，神态自然放松，50mm 镜头，浅景深，轻微胶片颗粒。</pre></div>
+    <div class="note">灯笼是极好的<b>手持光源</b>——会让脸从下方被照亮，这是夜景人像少见的生动光位；换成宫灯与中式灯会，同一套光法依然成立。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F20 · 婚纱写真</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位新娘独自站在教堂高窗下，穿简约缎面婚纱，长头纱垂落在地面，低头看着手中捧花。彩色玻璃窗的光从侧后方照入，纱裙与头纱呈现出半透明的透光层次，地板上有窗格形状的光斑，空气里可见细微浮尘，庄重温柔的氛围，85mm，竖版 3:4。</pre></div>
+    <div class="note"><b>「纱裙透光」是婚纱人像的核心技术点</b>，一定要写出来，否则白裙会变成一块死白。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="氛围">
+    <div class="card-h"><span class="t">F21 · 晚宴礼服</span><span class="tag f">女</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性身着深墨绿丝绒长礼服，站在高挑宴会厅的拱形窗旁，手扶一只香槟杯，侧脸望向窗外夜色。低照度的暖色壁灯为主光，天鹅绒在光下呈现柔和的高光过渡与深阴影，背景虚化出吊灯的金色光斑，古典而克制，50mm 镜头，浅景深。</pre></div>
+    <div class="note">礼服人像吃<b>材质</b>：丝绒要「柔和高光过渡 + 深阴影」，缎面要「镜面高光 + 硬折痕」，写错材质等于穿错衣服。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="影棚">
+    <div class="card-h"><span class="t">F22 · 影棚伦勃朗光</span><span class="tag f">女</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>Close-up studio portrait of a woman, Rembrandt lighting: a single key light positioned high at 45 degrees to the right, a small inverted triangle of light on the shadow-side cheekbone below the eye, the left side of the face transitioning into deep shadow, deep charcoal seamless background, visible skin texture and pores, sharp focus on the iris, realistic catchlight in the eye. 4:5 portrait.</pre></div>
+    <div class="note">换味道只改光位词：<code>butterfly lighting</code>（美妆 / 魅惑）· <code>split lighting</code>（半明半暗、硬朗）· <code>clamshell lighting</code>（上下夹光，去眼袋与下颌阴影）· <code>high key</code> · <code>low key</code>。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="影棚">
+    <div class="card-h"><span class="t">F23 · 高调美妆特写</span><span class="tag f">女</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>Close-up beauty portrait of a woman with flawless natural makeup, high key lighting: a large octabox directly in front and slightly above at 15 degrees, a fill light from the left at equal power, a pure white seamless backdrop lit to slight overexposure, extremely soft shadow detail remaining only beneath the nose and chin, luminous skin that still shows natural pores and texture, rectangular catchlights clearly visible in both eyes, dewy lips with visible texture, 1:1 square crop.</pre></div>
+    <div class="note">高调光的陷阱是<b>把皮肤烧成一团白</b>。必须补一句「仍可见毛孔与皮肤纹理」，并写 <code>luminous skin</code>。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="影棚">
+    <div class="card-h"><span class="t">F24 · 黑白人物肖像</span><span class="tag f">女</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>An intimate black-and-white character portrait of a woman with a quiet off-camera gaze. Side window light from the left, a 50mm lens look, deep tonal range with rich blacks and bright highlights, gentle film grain, realistic skin texture with visible pores and expression lines, a faint scar or mole kept as character, chest-up composition on a plain dark background. 4:5.</pre></div>
+    <div class="note">黑白的成败在<b>影调范围</b>：别只说「黑白」，要说「深黑 + 亮部通透 + 中间调层次」。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="氛围">
+    <div class="card-h"><span class="t">F25 · 电影感低调</span><span class="tag f">女</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>cinematic low-key portrait of a woman leaning against a concrete wall in a dim hallway, only a sliver of light from a narrow doorway falling across one eye, most of the frame dissolving into darkness, teal shadows and warm highlights, haze visible in the light beam, subtle film grain, 35mm anamorphic feel, 21:9 wide, serious and introspective mood.</pre></div>
+    <div class="note">低调光的核心是<b>「让大部分画面真的黑下去」</b>。写清光源只有一个，否则模型会自动加补光，变成普通暗图。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="氛围">
+    <div class="card-h"><span class="t">F26 · 赛博朋克霓虹</span><span class="tag f">女</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a woman in a translucent raincoat standing in a wet alley at night, cyberpunk styling. A magenta neon sign on the left casts a hard colored rim light along her jaw and shoulder, a cyan light on the right fills the opposite side, rain-wet ground reflecting both colors, atmospheric haze and steam, background of blurred vertical neon signage, high contrast, cinematic color grading, 85mm, shallow depth of field.</pre></div>
+    <div class="note">双色光的关键<b>写清左右各自什么颜色</b>。只说「霓虹」会得到一团糊在一起的粉紫。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="氛围">
+    <div class="card-h"><span class="t">F27 · Y2K 千禧风</span><span class="tag f">女</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a young woman styled in early-2000s fashion, wearing a metallic silver top and low-rise jeans, butterfly hair clips, glossy lips, slight low camera angle looking down at her. Direct on-camera flash look: hard flat light, a sharp dark shadow behind her, slight overexposure and a cool digital color cast, high saturation, visible fine digital noise, Y2K editorial styling, 4:5 vertical.</pre></div>
+    <div class="note">千禧风的灵魂是<b>机顶直闪</b>——硬平光 + 身后一道硬影。写「direct on-camera flash」比写一百个形容词都管用。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="日常">
+    <div class="card-h"><span class="t">F28 · 法式慵懒</span><span class="tag f">女</span><span class="tag">日常</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a woman with softly tousled hair leaning on a wrought-iron balcony in a Paris apartment, wearing a plain white shirt with the sleeves rolled, holding a coffee cup, relaxed half-smile, slightly turned away from the camera. Soft diffused morning light from the left, gentle shadow gradients across the face, out-of-focus Haussmann facades behind, restrained warm neutral grading with a hint of film grain, 50mm, 4:5.</pre></div>
+    <div class="note">法式感 = <b>「松散不刻意」</b>：头发微乱、袖子挽起、不看镜头、光要柔。写「bedhead」比写「优雅」有效。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F29 · 波西米亚草原</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a woman in a long embroidered bohemian dress with layered silver jewelry, standing in tall dry grass at golden hour, arms slightly raised with fabric catching the wind. Low warm sun from behind creating a glowing rim on her hair and the translucent dress fabric, faint lens flare, dusty golden atmosphere, background of blurred hills, 85mm, shallow depth of field, film grain, 4:5.</pre></div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="影棚">
+    <div class="card-h"><span class="t">F30 · 极简高级灰</span><span class="tag f">女</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>an editorial portrait of a woman in a sharply tailored off-white blazer, arms crossed, direct confident gaze. Large softbox key light at 45 degrees to the left with a subtle silver reflector filling the shadow side, seamless medium-grey backdrop, clean composition with generous negative space at the top, calm restrained color palette, crisp fabric texture with visible weave, sharp focus on the eyes, 4:5.</pre></div>
+    <div class="note">「高级灰」= <b>中性灰背景 + 单一柔光源 + 大面积留白</b>。堆任何风格词都会掉档次。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F31 · 敦煌 / 西域</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女子身着赭红与石青交织的西域风长裙，臂挽轻薄披帛，站在沙丘脊线上回身，披帛与长发在风中向一侧扬起。强烈的午后硬阳光从右侧高位照射，在沙面留下清晰锐利的阴影与细腻沙纹，远处是层层推进的沙丘剪影，暖赭与冷蓝的天空形成对比，色彩饱满而克制，50mm，竖版 3:4。</pre></div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F32 · 工装酷感</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性靠着锈迹斑斑的工业铁门站着，穿军绿色宽松工装外套与束脚裤，双手插兜，下巴微抬，表情冷淡。头顶高位的硬光在眼窝与颧骨下形成深阴影，铁门与地面呈现真实的颗粒与锈斑质感，背景是虚化的厂房管道，冷调偏灰绿，35mm，半身构图，4:5。</pre></div>
+    <div class="note">「酷」靠<b>硬光 + 阴影遮眼 + 不看镜头</b>。柔光笑着拍再怎么调都是甜美风。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F33 · 泳池边</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性坐在泳池边缘，双腿浸入水中，穿简约连体泳衣，双手撑在身后，仰头闭眼感受阳光。正午顶光经水面反射，在她下颌与胸前形成流动的水波光斑（caustics），皮肤上有细密水珠与真实的湿润光泽，背景是虚化的纯蓝池水与白色躺椅，高饱和的夏日色调，50mm，4:5。</pre></div>
+    <div class="note">水面反光有个专有词：<code>caustics</code>（水波光斑）。写对这一个词，泳池照立刻专业。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F34 · 孕妇写真</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位孕妇站在柔和的浅色墙面前，穿贴身针织长裙，双手轻抚孕肚，低头微笑，侧身面向窗户。柔和的大面积窗光从左前方照入，在她腹部勾出圆润的明暗过渡，脸上有温柔的阴影梯度，背景留白干净，暖米色调，质感细腻，85mm，浅景深，竖版 3:4。</pre></div>
+    <div class="note">孕妇写真重在<b>「侧身 + 单一大柔光源」</b>：光要软、要来自一个方向，腹部轮廓才会有圆润的立体感。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="家庭">
+    <div class="card-h"><span class="t">F35 · 母女亲子</span><span class="tag f">女</span><span class="tag">家庭</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位年轻母亲蹲在草地上，与三四岁的女儿面对面说笑，女儿的手正抓着她的一缕头发。傍晚的暖色斜光从右后方照来，在两人发丝上形成柔和轮廓光，草地有清晰的草叶纹理与散落的落叶，背景是虚化的树林与落日，自然的抓拍感、无摆拍痕迹，50mm，浅景深。</pre></div>
+    <div class="note">亲子照要写<b>「互动动作」</b>（抓着头发、递东西、面对面笑），只写「母子合影」会得到两人僵直并排站。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="氛围">
+    <div class="card-h"><span class="t">F36 · 舞台 / 打歌</span><span class="tag f">女</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a young woman performing on a dark stage, wearing a fitted stage outfit with subtle sequin detail. Two opposing colored spotlights — cobalt blue from the left, hot magenta from the right — create hard colored edges on both sides of her silhouette, a faint haze makes the light beams visible, specular highlights on the sequins, background of pure black, dynamic mid-motion pose with slight motion blur, high contrast, 85mm, 4:5.</pre></div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F37 · 秋日银杏</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性站在金黄的银杏树下抬头向上看，手心里放着几片刚落下的叶子，围一条红棕色围巾。从低角度仰拍，树冠逆着午后阳光形成金黄色半透明叶片，光斑从叶隙落下洒在她脸上，地面铺满落叶，暖金与焦糖色调，35mm 低机位，4:5 竖版。</pre></div>
+    <div class="note">仰拍 + 逆光让树叶透光是银杏照的唯一解法。<b>一定要写低机位</b>，平拍只会拍到树干。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="氛围">
+    <div class="card-h"><span class="t">F38 · 圣诞节日</span><span class="tag f">女</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a woman in a soft cream knit sweater holding a mug, standing beside a lit Christmas tree in a warm living room. Warm string lights in the background rendered as large round bokeh at f/1.8, a subtle warm fill from the tree lights on one side of her face, pine branches and a few red ornaments softly out of focus, cozy warm tones against a dark interior, gentle smile, 50mm, 4:5.</pre></div>
+    <div class="note">节日照的成败在<b>散景光斑</b>。写 <code>large round bokeh at f/1.8</code>，背景灯串才会变成圆点而不是碎光。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F39 · 运动风街拍</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a young woman leaning against a graffiti-covered wall, wearing an oversized hoodie and track pants, one hand in pocket, chin slightly raised, direct on-camera flash look with a hard shadow on the wall behind her, slight cool color cast, visible digital grain, urban streetwear styling, sharp fabric texture on the hoodie, 35mm, 4:5.</pre></div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="古风">
+    <div class="card-h"><span class="t">F40 · 民国复古</span><span class="tag f">女</span><span class="tag">古风</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位身着素色高领旗袍的女性坐在老式木窗前的梳妆台旁，手执一把古铜色圆镜，眼神望向窗外。窗格里透进的天光为她打出一半明亮一半阴影，室内陈设是深色木质家具与铜质台灯，墙面有细微的斑驳纹理，整体色调偏暖褐与墨绿，老月份牌式的年代感，50mm，竖版 3:4。</pre></div>
+    <div class="note">民国感的两个开关：<b>深色木质陈设 + 斑驳墙面</b>。空间太新太亮就变成现代影棚。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="影棚">
+    <div class="card-h"><span class="t">F41 · 大特写 · 眼部</span><span class="tag f">女</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>超近距大特写，只取眼睛与眉毛。睫毛根根分明且有自然的轻微交错，虹膜呈深棕带放射状纹理，瞳孔里映出一扇窗的方形反光，眼周皮肤可见细绒毛与真实毛孔，眼角有一丝自然的细纹。100mm 微距镜头，f/2.8，正面大面积柔光加一点侧向补光，背景是模糊的浅灰色，竖版 4:5。</pre></div>
+    <div class="note">眼球里的反光形状（catchlight）决定照片活不活——写清它来自窗户（方形）还是柔光箱（矩形），模型就不会给你一对死眼睛。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="影棚">
+    <div class="card-h"><span class="t">F42 · 大特写 · 唇部</span><span class="tag f">女</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>极近距离的唇部特写，只包含嘴唇与一点下巴。唇面细纹与竖向唇纹清晰可见，唇釉带一层湿润的镜面高光，唇形边缘干净，下巴皮肤有真实的细小绒毛，嘴唇微微张开。柔和的弧形柔光从正面稍上方打来，两侧各有一点低强度补光，背景是虚化的浅粉色，1:1 方形构图，美妆广告质感。</pre></div>
+    <div class="note">唇部的高光要是「湿润的镜面反射」而不是「一片油光」——写唇釉 / 玻璃唇，别写「闪亮」。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F43 · 特写 · 窗光侧脸</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>面部特写，女性侧脸朝向窗户，鼻梁、唇峰与颧骨被窗光勾出一条明亮的高光线，眼窝和下颌下方保留柔和的阴影过渡，睫毛在脸颊上投下细密的影子，几根发丝散在脸侧。背景是虚化的浅米色墙面，85mm 镜头，f/1.8，皮肤可见真实毛孔与细绒毛，色调通透干净，竖版 4:5。</pre></div>
+    <div class="note">侧脸特写不要给对称的正面光，一定要写清光从侧面来、脸的两侧有明显明暗差，否则会拍成证件照。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F44 · 中近景 · 咖啡馆窗边</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>中近景构图，取到胸线以上，女性坐在咖啡馆靠窗的高脚椅上，一手托着下巴转头看向窗外，穿米白色衬衫，袖口挽起。窗光从画面左侧斜射进来，她半边脸明亮、半边脸落在柔和的阴影里，桌上有一杯拉花咖啡与翻开的杂志，背景虚化出暖色吊灯与深色墙面，50mm，f/2，暖调，4:5。</pre></div>
+    <div class="note">中近景要先定取景边界（写到胸线以上），再说明双手在做什么，否则容易生成一只手悬在半空的怪图。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F45 · 中景 · 街头驻足</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>中景半身，一位女性在人行道上停下脚步回头看向镜头，穿浅色风衣与牛仔裤，一手插兜、一手拎着帆布包带。阴天的漫射光让脸部没有任何硬阴影，背景是虚化的行道树与沿街店铺招牌，路面有轻微积水反光，干净的低饱和色调，35mm，4:5。</pre></div>
+    <div class="note">阴天平光是街拍最省事的解法，但要补一句「背景虚化 + 低饱和」，否则整张会灰成一片。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F46 · 膝上景 · 长椅阅读</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>膝上景，取到大腿中段，女性坐在公园长椅上低头看书，双腿交叠，穿宽松针织开衫，一只手压在书页上。午后阳光从侧后方穿过树冠，在她发梢和肩头形成明亮的轮廓，书页上有树叶投下的斑驳影子，背景是虚化的草地与远处行人，50mm，f/2.2，暖调胶片感，4:5。</pre></div>
+    <div class="note">膝上景是最好用的折中景别：既能看清姿态，又不会因为退得太远丢掉面部细节。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F47 · 全身 · 走过斑马线</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>全身竖构图，一位女性正走过斑马线，停在迈步的中间瞬间，穿廓形西装外套与直筒裤，手里拎一只硬挺的手提包。低角度的晨光从侧后方照来，在她鞋底与地面之间拉出一道细长的影子，斑马线白条在镜头前形成强烈的前景引导线，背景是虚化的早高峰车流，35mm，4:5。</pre></div>
+    <div class="note">全身照必须写「迈步的中间瞬间」——静止站立的全身体态会非常僵硬，一点动态立刻活起来。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F48 · 环境人像 · 人物很小</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>环境人像，人物只占画面下半部很小的一块：一位女性独自站在巨大的盐湖边缘，穿红色长裙，身影很小，四周是浅水与镜面般的倒影。傍晚的霞光把天空染成玫瑰金，湖面同时映出天空与人物，地平线压得很低，大片留白留给天空，24mm 广角，16:9 横向。</pre></div>
+    <div class="note">环境人像的规则是「人越小、故事越大」：给人物一个高饱和的服装色块，在低饱和的大场景里当视觉锚点。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F49 · 低机位仰拍</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>极低机位仰拍，镜头几乎贴着地面向上，一位女性站在过街天桥的钢架上，双手扶着栏杆向下看，穿长款风衣，衣摆被风掀起。仰拍让她的身形成比修长挺拔，背景是透视收敛的高楼立面与流动的云，硬质天光在她下颌与脖颈下方留下清晰阴影，24mm，4:5 竖版。</pre></div>
+    <div class="note">仰拍是把普通身材拍出气势的最快方法，但要写「贴着地面」并交代背景线条（高楼、云），否则只会拍到一个下巴。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F50 · 高机位俯拍</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>高机位俯拍，约 60 度向下，一位女性仰躺在浅色床单上，长发散成一圈，双手交叠放在腹部，闭眼微笑。柔和的顶光均匀照下，床单褶皱形成自然的明暗过渡，旁边散落一本翻开的书与一杯水，画面留出大片干净的床单作负空间，35mm，1:1 方形。</pre></div>
+    <div class="note">俯拍的难点是「光会变平」——必须补一句「床单褶皱有明显明暗层次」，不然人会像被贴在布上。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F51 · 背影回望</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>背影构图，一位女性背对镜头走在通往海边的木栈道上，走到一半回过头来，只露出半张侧脸，穿浅色长裙，草帽拎在手上。黄金时刻的逆光在她头发边缘勾出一圈金色轮廓，海面有细碎反光，栈道的木纹与两侧枯草清晰可见，50mm，f/2，4:5。</pre></div>
+    <div class="note">「背影回望」比正面直拍好看得多：既保留背影的神秘感，又露出一点侧脸，不完全丢掉五官。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F52 · 过肩机位</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>过肩机位，从一位女性的左肩后方看过去：前景是她虚化的肩膀与头发，焦点落在对面桌上的一扇窗与半拉的窗帘上。她正端着一杯茶，肩膀线条构成画面的入口，窗光从前方照来，空气中可见细微浮尘，35mm，f/1.8，浅景深，16:9。</pre></div>
+    <div class="note">过肩机位让人「看向画面外」，适合表达思绪。写清「前景虚化、焦点在窗外」，模型才不会把肩膀也拍清楚。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F53 · 镜中倒影</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性站在衣帽间的落地镜前整理头发，画面呈现的是镜中的她，镜框与部分墙纸进入构图，形成画中画的层次。暖色吊灯从上方照来，镜面有一点真实的反光与轻微灰尘痕迹，她身上的针织衫纹理清晰，背景墙角堆着几双鞋，50mm，4:5。</pre></div>
+    <div class="note">镜面照要写「镜面有真实反光与灰尘」，太干净的镜子看起来像合成图；同时让镜框入画，才有空间层次。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="氛围">
+    <div class="card-h"><span class="t">F54 · 侧脸剪影</span><span class="tag f">女</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>侧脸剪影，一位女性站在半透的白色纱帘后，身体轮廓被背后的强光勾勒成一道深色剪影，只有下颌线与睫毛的边缘带一点透光，纱帘的织纹与褶皱清晰可辨。单一逆光光源，正面完全不补光，画面几乎全部由明暗两极构成，暗部与亮部对比强烈，85mm，4:5。</pre></div>
+    <div class="note">剪影的关键是「正面完全不补光」。只要模型在脸上留一点光，剪影就废了——明确写「面部处于完全暗部」。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F55 · 地铁车厢</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>夜晚的地铁车厢内，一位女性独自坐在长椅上低头看手机，穿深色大衣，膝上放着包。头顶一排名亮的条形灯光在她脸上形成自上而下的照明，眼窝下留有浅阴影。车厢顶部与窗玻璃映出重复的灯带与人影，窗外是虚化的隧道灯，冷青色调配一点暖肤，35mm，4:5。</pre></div>
+    <div class="note">车厢的光是「顶光 + 大面积反射」——把灯带位置和玻璃反射都写出来，画面才有真实的纵深。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F56 · 便利店深夜</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>深夜便利店的冷白灯光下，一位女性站在饮料柜前挑东西，玻璃门上映出她的倒影与整排商品的重复光影，穿宽松卫衣，手里拿着一瓶饮料。上方日光灯管提供均匀偏冷的顶光，商品包装上的颜色成为画面里的点，柜内灯光在她脸侧留下一点补光，35mm，4:5，轻微数码噪点。</pre></div>
+    <div class="note">冷白日光灯是便利店最鲜明的特征，别改成暖光；另外一定要写商品与玻璃倒影，否则就只是一个白色房间。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F57 · 出租车后座</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>雨夜的出租车后座，一位女性靠窗坐着望向窗外，侧脸被车窗外流动的霓虹光影不断染色，车内很暗，只有对面车灯偶尔扫过她的下颌与眼睛。玻璃上有雨珠与模糊的城市灯光，座椅织物纹理可见，色彩是冷青底子上的红橙光斑，50mm，f/1.4，4:5。</pre></div>
+    <div class="note">车窗是天然的光影幕布——写「流动的霓虹不断染色」，模型就给你混合色光，比单一色光高级得多。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="街头">
+    <div class="card-h"><span class="t">F58 · 老巷门洞</span><span class="tag f">女</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性站在老城区巷子的石砌门洞里，一手扶着斑驳的门框，侧身向外张望，穿浅色棉麻衬衫与长裤。午后的硬阳光从巷口斜射进来，在地面与墙上切出一条明亮的斜带，她半个身体在光里、半个在影里，墙面的剥落质感与青苔清晰，35mm，4:5。</pre></div>
+    <div class="note">门洞是天然的画框，也是天然的硬光切割器——写清「光在墙面切出一条斜带、人一半在光里」，明暗对比立刻成立。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F59 · 楼梯间硬光</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>全身构图，一位女性站在老式办公楼的混凝土楼梯上停下回头，穿简约的黑色连衣裙与低跟鞋，手扶铁质扶手。从侧上方高窗射入的硬光在台阶上投下一道道规律的明暗条带，她身体的影子被拉长并折在墙角，水泥墙面有细孔与污渍质感，35mm，4:5。</pre></div>
+    <div class="note">楼梯间的重复光影是免费的构图工具——写清「台阶上的规律明暗条带」，画面就有了节奏。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="氛围">
+    <div class="card-h"><span class="t">F60 · 天台夜景</span><span class="tag f">女</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>夜晚的城市天台，一位女性靠着护栏远眺，穿风衣，头发被晚风吹向一侧，背后是密集的城市灯火与远处的楼宇天际线。城市光污染形成的柔和顶光落在她的发顶与肩线上，面部主要靠远处灯光的漫反射照明，护栏的金属与水泥有真实质感，背景光斑虚化成密集圆形，50mm，f/1.8，4:5。</pre></div>
+    <div class="note">城市夜景人像的真正光源是「一整片天空的漫反射」——写清「脸由远处灯光漫反射照明」，比硬塞一盏补光自然。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F61 · 森林晨雾</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>环境人像，清晨的松林里漫着一层薄雾，一位女性穿着浅色外套走在林间小径上，身影在雾中略显模糊。阳光从树林背后低角度射入，穿过雾气形成一道道可见的光柱，空气里的水汽与浮尘被照亮，地面覆盖松针与苔藓，青绿与灰白色调，50mm，4:5。</pre></div>
+    <div class="note">光柱只在有雾或浮尘时才可见——写「穿过雾气形成可见光柱」，并保留人物在雾中的轻微模糊，氛围才对。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F62 · 雪山高原</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性站在海拔四千多米的高原草甸上，背后是连绵的雪山，穿深色冲锋衣，围巾在风里扬起，脸颊有真实的红晕与轻微干裂。强烈的高原阳光从右上方打下，雪面反射的强光照亮她的下颌底部，天空是深蓝到白的渐变，空气通透度极高，35mm，16:9 横向。</pre></div>
+    <div class="note">雪地是一块天然的巨型反光板，脸上会有从下往上的补光——把这一点写出来，会得到非常真实的户外光照。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F63 · 金色麦田</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性走进成熟的麦田，只露出上半身，麦穗高过她的腰，穿浅色连衣裙，手轻轻拂过麦芒。低角度的傍晚阳光从背后照来，把麦穗照成半透明的金色，她的发丝边缘透光，前景麦穗虚化成一片金色光斑，暖金与浅绿调，85mm，f/1.8，4:5。</pre></div>
+    <div class="note">麦田人像的关键是「让麦穗挡在镜头前形成前景虚化」，这一点写出来，纵深立刻从平面变成立体。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="户外">
+    <div class="card-h"><span class="t">F64 · 茶园</span><span class="tag f">女</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性穿浅色棉麻上衣站在层层叠叠的茶园梯田里，弯腰采摘茶叶，指尖捏着一芽两叶。清晨的薄雾还没散尽，柔和的斜光从茶树垄间穿过，叶面有露水的高光，远处是虚化的梯田曲线与山影，青绿层次丰富，50mm，4:5。</pre></div>
+    <div class="note">茶园要有「垄的曲线」才有形式感——写清「层层叠叠的梯田曲线」，比写「大片茶园」有用得多。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F65 · 花店</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>中近景，一位女性在花店里低头整理一束花，穿亚麻围裙，手指上沾着一点水，面前是成排的鲜花。店门的自然光从她身后照入，花瓣被逆光照成半透明，她的侧脸则由花丛反射的柔光打亮，背景是虚化的金属桶与包装纸，暖调通透，50mm，f/2，4:5。</pre></div>
+    <div class="note">花店的秘密是「花本身就是反光板」——写「侧脸由花丛反射的柔光打亮」，光会非常干净。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F66 · 美术馆</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>环境人像，一位女性坐在美术馆展厅中央的长凳上看着远处的画作，穿深色衣服，身影在大空间里显得很小。顶部的漫射天光照亮整个展厅，地面是微反光的灰色石材，画作只作为远处的色块出现，空间里有安静的空气感，35mm，16:9 横向。</pre></div>
+    <div class="note">美术馆拍人的重点是空间比例：人小、墙大、地面反光，写清这三点就有展览感。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F67 · 厨房早餐</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>中近景，一位女性在厨房里煎蛋，穿着家居服，头发随意扎起，一手扶着锅柄，回头对着镜头笑。清晨的窗光从侧后方照来，在煎锅升起的蒸汽上形成明亮的高光，大理石台面有真实的纹路与一点水渍，背景是虚化的橱柜与调料瓶，暖调生活感，50mm，f/2，4:5。</pre></div>
+    <div class="note">厨房人像要有「正在发生的事」——蒸汽、油花、翻面的动作。写一件具体的事，比写「生活感」有用。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F68 · 浴室雾气</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位女性从雾气弥漫的浴室里走出来，披着浴袍，头发湿漉漉地贴在颈侧，镜面被水汽覆盖，只留下几道擦过的痕迹。雾面玻璃后方透进均匀的冷白色光，成为整个画面的主光源，皮肤上有细密水珠与真实的湿润高光，瓷砖与水汽的质感清晰，50mm，4:5。</pre></div>
+    <div class="note">水汽是最便宜的柔光罩——写「雾面玻璃透光作主光」，光会非常均匀；水珠与湿发要靠高光才真实。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="室内">
+    <div class="card-h"><span class="t">F69 · 舞蹈练功房</span><span class="tag f">女</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>全身构图，一位女性在舞蹈练功房完成一个旋转的中段动作，穿黑色练功服，裙摆与发丝因离心力甩开，脚尖点地。整面墙的镜子与一排高窗同时出现在画面里，窗外强光在木地板上划出一条明亮的光带，镜中映出她的另一个角度，轻微动态模糊，35mm，4:5。</pre></div>
+    <div class="note">练功房的镜子能一次拍到两个角度——写「镜中映出另一个角度」，构图立刻丰富；再加轻微动态模糊，旋转才有速度。</div>
+  </article>
+
+  <article class="style-card f" data-sex="f" data-cat="氛围">
+    <div class="card-h"><span class="t">F70 · 露营地篝火</span><span class="tag f">女</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>夜晚的露营地里，一位女性坐在折叠椅上烤火，双手伸向火堆，穿厚外套，脸上是被火光映亮的暖橙色。篝火是画面里唯一的实光源，从下方照亮她的下颌与鼻尖，在眼窝上方留下一片阴影，营地灯串在远处虚化成暖色光点，帐篷与森林沉在暗处，40mm，f/2，4:5。</pre></div>
+    <div class="note">篝火是「从下往上的暖光」，这是夜景里极少见的光位——写清「光从下方照亮下颌」，画面立刻有温度。</div>
+  </article>
+  </div>
+
+  <!-- ---------- 男性 ---------- -->
+  <div class="cat-group" data-sex="m">
+  <h3>男性人像 <span class="hint">25 条 · 前缀 M</span></h3>
+
+  <article class="style-card m" data-sex="m" data-cat="影棚">
+    <div class="card-h"><span class="t">M01 · 商务正装头像</span><span class="tag m">男</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>A professional headshot of a man in his early 30s with short dark hair and a defined jawline, wearing a charcoal suit and white shirt, three-point studio lighting with a softbox key light at 45 degrees to the right and a fill light at half power, rim light separating the hair from the background, even balanced illumination across the face, neutral light grey seamless background. Shot at eye level with an 85mm lens, sharp focus on the eyes, realistic skin texture, a hint of stubble. 1:1 crop. No heavy retouching.</pre></div>
+    <div class="note">三点布光（key + fill + rim）三平台通用。OpenAI 上还可直接说「像专业摄影师拍摄的领英头像」，它会自行补全光位。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="街头">
+    <div class="card-h"><span class="t">M02 · 都市精英街拍</span><span class="tag m">男</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性走在写字楼前的玻璃幕墙下，穿深灰色羊绒大衣内搭高领毛衣，单手插兜，脚步从容，目光平视前方。清晨偏冷的侧光勾勒出大衣的轮廓与肩线，玻璃幕墙上映出模糊的城市剪影，冷灰蓝调，50mm 镜头，全身入镜，画面留出上方建筑线条，4:5 竖版。</pre></div>
+    <div class="note">男性都市感靠<b>「大衣轮廓 + 冷调侧光 + 高建筑线条」</b>，柔光会瞬间变成淘宝模特图。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="室内">
+    <div class="card-h"><span class="t">M03 · 旧书店文青</span><span class="tag m">男</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性坐在旧书店的窗边翻书，穿白色亚麻衬衫，袖子随意挽到小臂，戴细框眼镜。逆光的窗在他肩头与发梢形成柔和的轮廓光，脸上有自然的半明半暗过渡，桌面有翻开的书与一杯咖啡，背景是虚化的书架与尘埃光束，低饱和的清淡胶片色调，85mm，半身构图。</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="室内">
+    <div class="card-h"><span class="t">M04 · 居家生活</span><span class="tag m">男</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>写实居家人像，一位男性坐在沙发上看书，穿浅灰色针织衫，一只手撑在书页上，微微侧头。落地窗的午后自然光从右后方照入，在沙发布料与木地板上留下清晰的明暗层次，茶几上有一只白瓷杯，背景是虚化的绿植，皮肤纹理与针织线圈清晰，暖中性色调，35mm，半身。</pre></div>
+    <div class="note">男性居家照不要「摆坐」。给他一件<b>手里正在做的事</b>（看书、倒水、系鞋带），画面立刻成立。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="氛围">
+    <div class="card-h"><span class="t">M05 · 复古港风男</span><span class="tag m">男</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性穿黑色皮夹克内搭白背心，靠在霓虹招牌下的旧式骑楼柱子上，嘴里咬着一根未点燃的烟，眼神锐利看向斜前方。暖红与青绿的霓虹灯从两侧打来，皮衣上有真实的磨痕与反光，背景是虚化的旧街招贴与湿地面，胶片颗粒感，暗调氛围，50mm，4:5。</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="街头">
+    <div class="card-h"><span class="t">M06 · 机车硬照</span><span class="tag m">男</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性跨坐在黑色巡航摩托车上，戴半盔，穿深色皮衣与工装靴，双手搭在车把上，身体微微前倾。傍晚的硬质侧光在他颧骨与皮衣上形成锐利高光与深阴影，机车油箱有真实的哑光漆面与细划痕，背景是虚化的公路与天空，暖色轮廓光配冷调环境，35mm 低机位，4:5。</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="室内">
+    <div class="card-h"><span class="t">M07 · 健身 / 力量感</span><span class="tag m">男</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性在健身房完成引体向上动作，穿深灰色无袖训练衣，背部与手臂的肌肉线条绷紧。顶部的方向性硬光从右上方打来，在肩背肌肉上形成清晰的明暗分割与锐利阴影，皮肤上有细微汗光，背景是虚化的器械与深色墙面，低饱和冷调，35mm，半身至全身。</pre></div>
+    <div class="note">肌肉要靠<b>方向性硬光 + 汗光</b>才出得来。柔光会把肌肉抹平，看起来像没练。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="户外">
+    <div class="card-h"><span class="t">M08 · 球场运动</span><span class="tag m">男</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性在傍晚的露天球场上跳起投篮，穿简洁运动背心与短裤，动作停在最高点。落日的低角度逆光把他的剪影与篮球框一起勾出金色边缘，汗湿的皮肤有细腻高光，球场地面的标线纹理清晰，背景是虚化的铁网与橙紫色晚霞，轻微动态模糊，35mm，竖版 4:5。</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="街头">
+    <div class="card-h"><span class="t">M09 · 军绿工装</span><span class="tag m">男</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性坐在废弃仓库的金属台阶上，穿军绿色多口袋工装外套与军靴，手肘撑在膝盖上，手里把玩一枚打火机，低头不看镜头。从高窗斜射进来的硬质天光在地面投下长长的窗格阴影，金属与墙面的锈蚀质感清晰，冷灰绿调，35mm，4:5。</pre></div>
+    <div class="note">工装风的质感在<b>「多口袋 + 磨痕 + 锈蚀环境」</b>，写清环境材质比写「硬汉」有用得多。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="氛围">
+    <div class="card-h"><span class="t">M10 · 西装晚宴</span><span class="tag m">男</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性身着深藏青三件套西装站在宴会厅的酒台旁，手插口袋，另一只手持威士忌杯，侧身看向远处。低照度的暖色壁灯从左前方打下，西装羊毛面料呈现自然哑光与柔和褶皱，背景虚化出吊灯的金色光斑与人群剪影，庄重克制的氛围，50mm，浅景深，4:5。</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="古风">
+    <div class="card-h"><span class="t">M11 · 汉服古风男</span><span class="tag m">男</span><span class="tag">古风</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>中式国风人像，一位男性身着月白色交领长衫，腰间系素色腰带，手持一柄折扇，站在竹林中侧身而立。柔和的晨光穿过竹叶在衣料与地面投下细碎光影，衣料有棉麻的自然褶皱与细微纹理，背景竹子层层虚化，青绿与月白为主调，气质清冷克制，85mm，竖版 3:4。</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="古风">
+    <div class="card-h"><span class="t">M12 · 新中式立领</span><span class="tag m">男</span><span class="tag">古风</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性身着深灰色立领盘扣中式上衣，站在素水泥墙前，双手交叠于身前，目光平静直视镜头。侧向的柔和天光在墙面与肩头形成渐变明暗，衣料的织纹与盘扣的立体细节清晰可见，画面极简、只保留人与墙两种元素，青灰调，85mm，竖版 3:4。</pre></div>
+    <div class="note">新中式的「新」来自<b>极简背景</b>（一面水泥墙就够），配道具配多了反而不新。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="影棚">
+    <div class="card-h"><span class="t">M13 · 影棚伦勃朗光</span><span class="tag m">男</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>Close-up studio portrait of a man with strong facial features and short cropped hair, Rembrandt lighting: a single key light positioned high at 45 degrees to the left, a small inverted triangle of light on the shadow-side cheekbone below the eye, the other side of the face dissolving into deep shadow, deep charcoal seamless background, visible skin texture, pores and stubble, sharp focus on the iris, realistic catchlight, low-key mood. 4:5.</pre></div>
+    <div class="note">男性伦勃朗光比女性更适合<b>加深阴影</b>——把「溶解进深阴影」写明确，轮廓会更有雕塑感。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="影棚">
+    <div class="card-h"><span class="t">M14 · 黑白人物肖像</span><span class="tag m">男</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>An intimate black-and-white character portrait of a man in his 40s with a quiet off-camera gaze and a few days' stubble. Side window light from the left, a 50mm lens look, deep tonal range with rich blacks and bright highlights, gentle film grain, realistic skin texture with visible pores and expression lines, chest-up composition on a plain dark background. 4:5.</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="氛围">
+    <div class="card-h"><span class="t">M15 · 电影感低调</span><span class="tag m">男</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>cinematic low-key portrait of a man sitting alone in an empty diner at night, only a single warm pendant light above the table illuminating one side of his face, the rest of the frame falling into deep shadow, rain-streaked window behind him with blurred city lights, teal shadows against warm amber highlights, visible atmospheric haze, subtle film grain, 35mm anamorphic, 21:9 wide, restrained and weary mood.</pre></div>
+    <div class="note">叙事感来自<b>「环境在讲什么」</b>：空餐馆、雨窗、一个人、一盏灯，这四个词已经是一段故事。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="氛围">
+    <div class="card-h"><span class="t">M16 · 赛博朋克雨夜</span><span class="tag m">男</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a man in a dark technical jacket standing in a rain-soaked futuristic alley, hood down, looking up at the neon signage. Hard cyan light from a sign overhead with a magenta reflection rising from the wet ground, visible rain streaks catching the light, steam venting from a grate, background of blurred stacked signage in Japanese and English, high contrast grading, 85mm, shallow depth of field, 4:5.</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="户外">
+    <div class="card-h"><span class="t">M17 · 西部牛仔</span><span class="tag m">男</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a weathered man in a worn leather hat and canvas jacket standing in a dusty desert plain, holding the brim of his hat with one hand, squinting into the distance. Hard low sun from the left raking across the landscape, long shadows in the sand, dust visible in the air, muted ochre and dusty blue grading like a 1970s western film stock, visible fabric wear and stitching, 50mm, 21:9 wide.</pre></div>
+    <div class="note">西部片的答案在<b>「硬低角度阳光斜扫 + 空气里的浮尘」</b>，再配上「70 年代胶片调色」。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="户外">
+    <div class="card-h"><span class="t">M18 · 户外徒步</span><span class="tag m">男</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性背着登山包站在山脊线上回头张望，穿深色冲锋衣，戴毛线帽，呼出的白气在冷空气中散开。低角度的逆光从他身后照来，在冲锋衣的边缘与帽檐上勾出明亮轮廓，远处是层叠的雪山剪影与冷调云层，脚下碎石与草甸纹理清晰，冷青色调，35mm，竖版 4:5。</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="室内">
+    <div class="card-h"><span class="t">M19 · 咖啡师 / 职人</span><span class="tag m">男</span><span class="tag">室内</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性咖啡师在吧台后专注地手冲咖啡，穿深色围裙与卷起袖口的衬衫，水柱正落在滤杯中。吧台的暖色吊灯从上方打出有方向的顶光，在手指与蒸汽上形成细腻高光，木质吧台有真实的纹理与使用痕迹，背景是虚化的咖啡器具与深色墙面，暖褐与墨绿调，50mm，半身，突出手部动作。</pre></div>
+    <div class="note">职人感要拍<b>手和工具</b>。写「水柱落在滤杯中」这种进行时动作，画面才有温度。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="氛围">
+    <div class="card-h"><span class="t">M20 · 音乐人</span><span class="tag m">男</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a musician sitting on a stool with an acoustic guitar across his knee, seen from a low angle, wearing a simple black shirt. A single strong backlight from behind left creates a bright rim along his shoulder and the guitar's edge, the front lit only faintly by reflected stage light, background of dark draped curtains, cool blue ambient with a warm rim, visible haze, 50mm, 4:5.</pre></div>
+    <div class="note">不要给音乐人配笑脸。写 <code>faintly lit, single backlight</code>，暗掉正面，情绪自然就出来了。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="日常">
+    <div class="card-h"><span class="t">M21 · 校园青春</span><span class="tag m">男</span><span class="tag">日常</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男生穿着敞开的白色校服衬衫背着单肩包，走在操场旁的长廊下，侧头看向场外，风把衬衫下摆吹起。午后阳光从柱廊侧面打进，在地面拉出一排长长的柱影，他的发梢被逆光照得透亮，背景是虚化的跑道与绿树，清新明亮、低饱和的胶片通透感，35mm，4:5。</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="户外">
+    <div class="card-h"><span class="t">M22 · 海边度假</span><span class="tag m">男</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性穿白色亚麻衬衫站在海边礁石上，衬衫扣子敞开，被海风吹得微微鼓起，手扶在帽檐上，望向海平面。黄金时刻的低角度阳光从侧后方照来，在他手臂与下颌形成暖色高光，海面有细碎反光与浪花白沫，背景是柔和的散景海平线，皮肤有真实的晒痕与纹理，50mm，4:5。</pre></div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="户外">
+    <div class="card-h"><span class="t">M23 · 雪景冬日</span><span class="tag m">男</span><span class="tag">户外</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位男性穿深色羊毛大衣站在落雪的街道上，围巾半掩下颌，双手插在口袋里，肩头落着一层薄雪，眼神平静看向前方。阴天的漫射光几乎没有硬阴影，整体是冷蓝白调，背景是虚化的街道树与雪中路灯，肤色调向自然暖色与之形成对比，85mm，浅景深，4:5。</pre></div>
+    <div class="note">与 F09 同理：雪景里必须主动要求<b>暖肤色</b>，否则人会显得气色枯败。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="古风">
+    <div class="card-h"><span class="t">M24 · 武士 / 刀客</span><span class="tag m">男</span><span class="tag">古风</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a lone swordsman in dark layered robes standing in a bamboo grove, one hand resting on the hilt of a sheathed blade, chin lowered, eyes fixed forward. Side lighting through the bamboo creates alternating bands of light and shadow across his body, damp ground with subtle mist, desaturated green-grey grading, volumetric light shafts, deliberate stillness, 50mm, 21:9 cinematic crop.</pre></div>
+    <div class="note">「刀客」的压迫感来自<b>静止 + 垂首 + 手搭刀柄</b>，而不是拔刀的动态姿势。静比动更难演，也更有味道。</div>
+  </article>
+
+  <article class="style-card m" data-sex="m" data-cat="街头">
+    <div class="card-h"><span class="t">M25 · 街头潮流 City Boy</span><span class="tag m">男</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>a young man walking through a city crosswalk mid-stride, wearing an oversized beige blazer over a loose shirt and wide pleated trousers, a tote bag over one shoulder, looking slightly off-frame. Overcast diffused daylight giving even, shadowless illumination, background of blurred pedestrians and shopfronts, muted natural palette, clean documentary street style, 35mm, 4:5.</pre></div>
+    <div class="note">City Boy 的关键是<b>宽松剪裁 + 阴天平光 + 走动抓拍</b>。硬光会把它变成杂志硬照，反而失真。</div>
+  </article>
+  </div>
+
+  <!-- ---------- 双人多人 ---------- -->
+  <div class="cat-group" data-sex="c">
+  <h3>双人 · 多人 · 家庭 <span class="hint">8 条 · 前缀 C</span></h3>
+
+  <article class="style-card c" data-sex="c" data-cat="家庭">
+    <div class="card-h"><span class="t">C01 · 情侣日常</span><span class="tag c">双人</span><span class="tag">家庭</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一对年轻情侣并肩走在傍晚的街道上，男生侧头说话，女生低头笑，两人手臂自然交叠，手里各自拿着饮料。低角度夕阳从他们背后照来，在发梢与肩线上形成柔和的金色轮廓光，背景是虚化的店铺灯火与行道树，暖橙与青蓝对比，抓拍感自然不刻意，50mm，浅景深，4:5。</pre></div>
+    <div class="note">双人照最忌「两人一起看镜头笑」。给他们<b>彼此之间的动作</b>（说话、递东西、牵手），画面才有关系。</div>
+  </article>
+
+  <article class="style-card c" data-sex="c" data-cat="氛围">
+    <div class="card-h"><span class="t">C02 · 情侣电影感</span><span class="tag c">双人</span><span class="tag">氛围</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>cinematic scene of a couple standing face to face in an empty subway station at night, foreheads almost touching, both in dark coats. A single overhead fluorescent tube creates a hard pool of light around them while the rest of the platform falls into shadow, one long vanishing-point corridor behind, teal and amber grading, visible haze, film grain, 35mm anamorphic, 21:9 wide, tender but restrained mood.</pre></div>
+  </article>
+
+  <article class="style-card c" data-sex="c" data-cat="家庭">
+    <div class="card-h"><span class="t">C03 · 婚纱双人</span><span class="tag c">双人</span><span class="tag">家庭</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一对新人在古老教堂的廊道里相向而立，新娘的长头纱延展至地面，新郎轻扶她的手臂，两人都低头微笑。侧后方的窗光让纱裙呈现半透明层次，地面有窗格状光斑与细碎石纹，空气里有细微浮尘，暖米色与浅灰调，庄重温柔，50mm，竖版 3:4。</pre></div>
+  </article>
+
+  <article class="style-card c" data-sex="c" data-cat="家庭">
+    <div class="card-h"><span class="t">C04 · 全家福</span><span class="tag c">多人</span><span class="tag">家庭</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一家四口坐在客厅沙发上，父母在中间，两个孩子一左一右靠在父母身上，最小的孩子正扭头看哥哥。来自落地窗的柔和侧光均匀照亮所有人，明暗过渡自然，沙发织物与地毯的纹理清晰，背景是虚化的书架与绿植，暖中性色调，人物位置由左至右为父、母、儿子、女儿，85mm，4:5。</pre></div>
+    <div class="note">多人照必须<b>从左到右写明每个人是谁、什么位置</b>——这是三家的通用做法：Nano Banana 官方就要求这样标注，缺失会导致人物特征互相混淆。</div>
+  </article>
+
+  <article class="style-card c" data-sex="c" data-cat="家庭">
+    <div class="card-h"><span class="t">C05 · 亲子互动</span><span class="tag c">双人</span><span class="tag">家庭</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一位父亲把三四岁的孩子举过头顶，孩子张着双臂大笑，父亲的衬衫被风掀起一角。傍晚的低角度暖光从侧后方照来，在两人身上形成柔和的轮廓光与自然的阴影，草地有清晰的草叶纹理，背景是虚化的公园树影与落日，真实自然的抓拍感，50mm，浅景深，4:5。</pre></div>
+  </article>
+
+  <article class="style-card c" data-sex="c" data-cat="日常">
+    <div class="card-h"><span class="t">C06 · 闺蜜下午茶</span><span class="tag c">双人</span><span class="tag">日常</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>两位女性隔着咖啡馆小桌相对而坐，一人在说、一人在笑，桌上散落着蛋糕盘与两只咖啡杯。大面积窗光从画面右侧照入，在两人脸上形成方向一致的柔和光影，背景是虚化的木格窗与绿植，暖调通透，皮肤质感真实，50mm 环境人像，半身双人构图，4:5。</pre></div>
+    <div class="note">双人对话照要写<b>「一人在说、一人在笑」</b>，明确两人状态不同，否则会生成两张同样的表情。</div>
+  </article>
+
+  <article class="style-card c" data-sex="c" data-cat="街头">
+    <div class="card-h"><span class="t">C07 · 兄弟 / 同学</span><span class="tag c">双人</span><span class="tag">街头</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>两位男性并排坐在天台边缘的水泥台上，双腿垂向楼外，一人低头看手机，一人仰头喝着易拉罐饮料，都穿简单的卫衣。傍晚的逆光在他们肩背上勾出轮廓，身前是虚化的城市屋顶与电线，画面偏青灰冷调，松弛的抓拍感，35mm，横向构图，16:9。</pre></div>
+  </article>
+
+  <article class="style-card c" data-sex="c" data-cat="家庭">
+    <div class="card-h"><span class="t">C08 · 毕业合照</span><span class="tag c">多人</span><span class="tag">家庭</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>六位身穿学士服的毕业生在操场看台前站成一排，其中一人正把学士帽抛向空中，其余人抬头大笑。午后明亮的顶光经薄云柔化，人物脸部均匀明亮，背景是虚化的教学楼与看台台阶，学士服的褶皱与流苏细节清晰，清新明亮的色调，35mm，横向构图，16:9。</pre></div>
+    <div class="note">六人以上务必<b>给每人一个差异化的动作或位置</b>（从左到右点名），否则会出现重复的脸。</div>
+  </article>
+  </div>
+
+  <!-- ---------- 证件头像 ---------- -->
+  <div class="cat-group" data-sex="id">
+  <h3>证件照 · 头像 <span class="hint">3 条 · 前缀 I</span></h3>
+
+  <article class="style-card id" data-sex="id" data-cat="证件">
+    <div class="card-h"><span class="t">I01 · 标准证件照</span><span class="tag id">证件</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>标准证件照：人物正面面向镜头，双肩平齐，头部居中，约占画面高度的三分之二，表情自然中立、嘴角微收，双眼平视镜头。均光照明，面部无明显阴影与高光溢出，肤色真实统一，背景为纯净的浅蓝色（或纯白色），无杂物无阴影。妆容自然不夸张，发型整洁露出双耳与额头，佩戴眼镜者镜片无反光。1 英寸比例 3:4，高清，五官清晰不变形，无美颜滤镜痕迹，无水印。</pre></div>
+    <div class="note">证件照的三个硬指标务必写全：<b>双肩平齐、露出双耳与额头、镜片无反光</b>。另外要主动写「无美颜滤镜痕迹」——模型默认会给你修成网红脸，容易被证照审核打回。</div>
+  </article>
+
+  <article class="style-card id" data-sex="id" data-cat="证件">
+    <div class="card-h"><span class="t">I02 · 领英 / 商务头像</span><span class="tag id">头像</span><span class="tag">影棚</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>A polished professional profile photo: subject facing the camera with a relaxed confident expression and a slight smile, shoulders square and slightly angled, framed from mid-chest up with a small amount of headroom. Three-point studio lighting — a large softbox key at 45 degrees, a fill light at half power, and a subtle rim light separating the hair from the backdrop. Seamless light grey or soft gradient background, clean and undistracting. Natural skin texture with visible pores, neat modern business attire, sharp focus on the eyes, 1:1 square crop. No heavy retouching, no text.</pre></div>
+  </article>
+
+  <article class="style-card id" data-sex="id" data-cat="证件">
+    <div class="card-h"><span class="t">I03 · 社交平台头像</span><span class="tag id">头像</span><span class="tag">日常</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>一张适合做社交头像的半身照：人物微微侧身面向镜头，头部保留少量留白以适配圆形裁切，表情自然放松、眼神有光。柔和的自然窗光从斜前方照入，脸部明暗过渡柔和，背景是干净的低饱和墙面或虚化的户外环境，避免杂乱元素。皮肤质感真实，头发边缘清晰，构图紧凑但不过度裁切手部。4:5 竖版，高清，五官自然不变形。</pre></div>
+    <div class="note">头像有一个特殊要求：<b>「预留圆形裁切空间」</b>。社交平台会裁成圆或方，头太满会被切掉额头或下巴。</div>
+  </article>
+  </div>
+
+</section>
+
+<!-- ========== 2 修图模板 ========== -->
+<section id="s5">
+  <h2>② 修图提示词（分平台）</h2>
+  <div class="lead">一条指令只改一处；每条都重申保留项；改到第四五轮发糊就回原图重跑。局部必须像素级不变的，把已确认的编辑合成回原图。</div>
+
+  <h3>R1 · 自然精修（去瑕疵但不磨皮）</h3>
+  <div class="card">
+    <div class="card-h"><span class="t">OpenAI</span><span class="tag p1">句子里写排除项</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>Edit the attached portrait with a natural, professional retouch. Reduce temporary blemishes and uneven skin tone gently while preserving realistic pores and natural skin texture. Slightly improve exposure, contrast, and skin tone. Add soft professional lighting. Keep the person's identity, facial structure, eyes, nose, lips, and hairstyle unchanged. Do not over-smooth the skin or apply a beauty-filter look.</pre></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><span class="t">Nano Banana</span><span class="tag p2">正面表述版</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>Retouch this portrait with a light, natural finish: clear up temporary blemishes so the skin looks clean and even while keeping real pores, fine lines, and skin texture visible. Brighten the face slightly and balance the skin tone. Keep the same face, expression, hairstyle, and identity. The result should look like a photograph that was professionally edited, not filtered.</pre></div>
+    <div class="note">注意这里<b>没有出现任何「不要」</b>——把「不要塑料脸」翻译成「让毛孔和细纹保持可见」，这是它读得懂的写法。</div>
+  </div>
+  <div class="card">
+    <div class="card-h"><span class="t">即梦</span><span class="tag p3">中文口令式</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>自然美颜，轻度磨皮，美白提亮，去除斑点痘印，保留皮肤纹理与毛孔，脸型微调显瘦，五官不变形，不要过度美颜，画面高清，无水印。</pre></div>
+  </div>
+
+  <h3>R2 · 重新打光（性价比最高的一招）</h3>
+  <div class="card">
+    <div class="card-h"><span class="t">三平台写法</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>OpenAI：Relight this photo with warm window light from the left, gentle dimensional shadows, natural skin tones. Change nothing else — keep the face, expression, hair, clothing, background, and framing exactly the same.
+
+Nano Banana：Relight this photo with warm window light coming from the left, creating gentle shadows and natural skin tones. Keep the person's face, expression, hair, clothing, background, and framing exactly the same.
+
+即梦：保留人物五官、表情、发型、服装、背景和构图不变，仅将画面光线改为从左侧照入的暖色窗光，阴影柔和自然，肤色真实统一。</pre></div>
+    <div class="note">大多数「废片」只差一次打光。可替换的光位：暖窗光 / 影棚柔光箱 45 度 / 黄金时刻侧逆光 / 低调伦勃朗光。</div>
+  </div>
+
+  <h3>R3 · 换背景 / 合成</h3>
+  <div class="card">
+    <div class="card-h"><span class="t">OpenAI</span><span class="tag p1">Change only + 光影匹配</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>Edit the attached image. Change only the background — replace it with a softly blurred modern interior in warm neutral tones. Keep the person, their face, hair, outfit, pose, and body proportions exactly the same. Match the lighting direction, color temperature, and shadow softness on the person to the new environment so it reads as a real photograph. Do not add text or logos.</pre></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><span class="t">Nano Banana</span><span class="tag p2">多图角色分配</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>Reference image attached. Replace the background with a softly blurred modern interior in warm neutral tones: linen curtains to the left, a wooden shelf behind, soft afternoon light.
+Keep the person's face, pose, outfit, and body proportions identical, and keep the camera angle and framing the same. Match the lighting on the subject to the new room — warm, diffused light from the left with soft shadows.
+
+（多图时）Use Image A for the person and their pose, Image B for the room and its lighting, Image C for the overall color grading.</pre></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><span class="t">即梦</span><span class="tag p3">保留 / 修改 / 要求</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>保留垫图中人物的面部特征、发型、服装、姿态和身材比例，将背景替换为暖色调的现代室内，左侧有亚麻窗帘，身后有木质置物架，午后柔光从左侧照入。人物身上的光影方向、色温与新场景统一，边缘与头发过渡自然。真实自然，高清，无水印，无多余文字。</pre></div>
+  </div>
+
+  <h3>R4 · 换装 / 换发型</h3>
+  <div class="card">
+    <div class="card-h"><span class="t">OpenAI</span><span class="tag p1">最严格的保留清单</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>Edit the attached photo. Replace only the outfit with a cream oversized knit sweater. Keep the face exactly unchanged, including identity, expression, skin tone, hairstyle, pose, body shape, hands, background, lighting, camera angle, and photo quality. The new garment must fit naturally with realistic fabric folds, seams, and shadows matching the original light. Change nothing else.</pre></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><span class="t">Nano Banana</span><span class="tag p2">命名 + 只改一处</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>Reference image attached. Change only his outfit to a cream oversized knit sweater with natural fabric folds and shadows that match the existing light. Everything else stays identical: the same face, the same expression, the same hairstyle, the same pose, the same hands, the same background, and the same camera angle.</pre></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><span class="t">即梦</span><span class="tag p3">中文加固版</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>保留垫图中人物的面部轮廓、五官特征、肤色、妆容、发型和发丝细节完全不变，人脸比例、角度、面部光影与原图保持一致；仅将服装替换为米白色宽松针织衫，衣物贴合身形，褶皱和阴影符合人体工学并与原图光线一致。背景、光影、色调、清晰度与原图统一，不添加原图中没有的元素，五官无变形，无多余文字。</pre></div>
+  </div>
+
+  <h3>R5 · 老照片修复</h3>
+  <div class="card">
+    <div class="card-h"><span class="t">三平台写法</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>OpenAI：Restore the attached vintage photograph. Remove scratches, stains, dust, and noise, repair creases, correct the fading, and enhance facial detail while keeping natural skin tones and the original atmosphere of the era. Do not change how anyone looks and do not alter the original composition.
+
+Nano Banana：Restore this old photograph: clean up the scratches, stains, and dust, repair the creases, bring back the faded tones, and sharpen the facial detail while keeping the natural skin tones and the period look of the image. Colorize the photo realistically and naturally, with believable tones for the skin, clothing, and setting that respect the era.
+
+即梦：修复这张老照片，去除划痕、污渍和噪点，恢复褪色，提升面部细节清晰度，保持人物五官真实、肤色自然，保留老照片的年代质感，不要过度美化，不要改变人物长相。</pre></div>
+    <div class="note">做「上色」而非「美化」时一定要说清 <code>colorize realistically, respect the period</code>，否则模型会顺手把人修年轻十岁。</div>
+  </div>
+
+  <h3>R6 · 去杂物 / 抠图 / 放大</h3>
+  <div class="card">
+    <div class="card-h"><span class="t">OpenAI（优势项：透明背景）</span><span class="tag p1">后台参数直接给 alpha</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>去杂物：In this image, remove the people in the background and rebuild the area behind them realistically and invisibly, leaving no trace. Keep the subject and everything else untouched.
+
+抠图：Cut out the main subject cleanly and place them on a fully transparent background. Output a centered subject with a crisp silhouette, no halos or fringing, and preserve the hair edges. Do not add a solid backdrop, checkerboard, scenery, or shadow.
+（API 侧配 background="transparent" + output_format="png"，JPEG 不支持透明）
+
+放大：Improve the sharpness and resolution of this image, reduce noise and blur, and revive fine detail without distorting the subject or adding new elements.</pre></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><span class="t">Nano Banana / 即梦</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>Nano Banana：Remove the parked car from the background and extend the sidewalk and buildings behind it so the scene looks continuous and natural. Keep the person and everything else exactly the same.
+
+即梦：保留主体人物不变，将背景中的路人移除，并自然补全背景，不留痕迹。画面高清，边缘自然，无水印，无多余元素。
+（也可直接用即梦智能画布的「图像消除」「抠图」「一键扩图」，比写提示词更省事）</pre></div>
+  </div>
+
+  <h3>R7 · 风格化 / 调色（保脸）</h3>
+  <div class="card">
+    <div class="card-h"><span class="t">三平台写法</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>电影感 · OpenAI：Regrade this photo like a cinematic film still — teal shadows, warm highlights, soft contrast, subtle film grain. Keep the framing, the person's face, and every detail of their appearance exactly the same.
+
+电影感 · 即梦：保留人物五官、表情、发型、服装和构图不变，将画面调色为电影质感，青蓝暗部、暖色高光、柔和对比，轻微胶片颗粒。
+
+黑白 · Nano Banana：Convert this photo to a rich black-and-white image with deep blacks, bright highlights, and gentle grain, keeping every detail of the person's face and hair.
+
+90 年代胶片 · 三平台通用：Restyle this photo as a 1990s film snapshot — visible grain, faded warm colors, direct on-camera flash look, slightly soft focus. Keep the face exactly the same and keep the composition unchanged.
+
+水彩 / 绘画：Transform this photo into a watercolor illustration with soft bleeding edges, paper texture, and pale washes, keeping the person's facial features recognizable and the composition unchanged. Do not add new elements.</pre></div>
+    <div class="note">风格化的强度一旦压过「保脸」，脸就会变。修法：<b>把保脸句放到最前面，再删掉最夸张的那个风格词</b>。Nano Banana 的一个官方技巧是——<b>把新风格的说法放在提示词最末尾</b>，前半段先锁死五官结构。</div>
+  </div>
+</section>
+
+<!-- ========== 3 平台差异速查 ========== -->
+<section id="s1">
+  <h2>③ 三平台差异速查</h2>
+  <table>
+    <tr>
+      <th style="width:15%">维度</th>
+      <th class="col-p1" style="width:28%">OpenAI（gpt-image-2 / 2.5）</th>
+      <th class="col-p2" style="width:28%">Nano Banana / Pro</th>
+      <th class="col-p3" style="width:29%">即梦 Seedream 4.0 / 4.5</th>
+    </tr>
+    <tr>
+      <td>提示词形态</td>
+      <td><b>1–3 句连贯自然语言就够</b>；复杂需求分段写（场景 / 主体 / 细节 / 约束）</td>
+      <td>创意简述式自然语言，六要素：主体 / 构图 / 动作 / 场景 / 风格 / 编辑指令</td>
+      <td>连贯自然语言描述画面（主体 + 行为 + 环境）+ 短词描述美学（风格 / 色彩 / 光影 / 构图）</td>
+    </tr>
+    <tr>
+      <td>长度</td>
+      <td>短更好。堆砌形容词会降低准确度</td>
+      <td>可写较长，上限约 2000 字符，长指令理解力好</td>
+      <td>中等。编辑指令要短而准；文生图可以写成段</td>
+    </tr>
+    <tr>
+      <td><b>负面词怎么写</b></td>
+      <td>没有负面框，<b>直接写在句子里</b>：<code>No extra text, no logos, no heavy retouching</code></td>
+      <td><b>不支持负面参数</b>。必须改成正向描述：写「空旷无人的街道」而不是「没有车的街道」</td>
+      <td>官方五步法含「约束项」，用<b>「无 XX」句式</b>：无水印、无模糊边缘、五官无变形</td>
+    </tr>
+    <tr>
+      <td>比例与尺寸</td>
+      <td>用参数设置（如 <code>size="1024x1536"</code>），不在文字里喊</td>
+      <td>写在提示词里：<code>A 9:16 vertical poster</code> / <code>cinematic 21:9 wide shot</code></td>
+      <td>写在提示词里，或写出用途让它自动推断（「用于小红书竖版封面」）</td>
+    </tr>
+    <tr>
+      <td>改图的锚定句</td>
+      <td><code>Change only X. Keep everything else exactly the same.</code></td>
+      <td>改动与保留<b>分开两段写</b>，并逐轮重申保留项</td>
+      <td><b>变化动作 + 变化对象 + 变化特征</b>（如「将头盔变为金色」）</td>
+    </tr>
+    <tr>
+      <td>保脸的官方手段</td>
+      <td>编辑时开启 <code>input_fidelity="high"</code></td>
+      <td>附参考图 + <b>给人物起名</b>，之后只用名字指代，不再重描五官</td>
+      <td>上传参考图，明确「保留人物形象特征」</td>
+    </tr>
+    <tr>
+      <td>最擅长</td>
+      <td>指令遵循、世界知识（能自行推断年代场景）、<b>透明背景抠图</b>、图中文字</td>
+      <td><b>多图融合（最多 14 张参考）</b>、文字渲染、对话式连续改图</td>
+      <td><b>中文语义最强</b>、垫图、局部重绘 / 一键扩图 / 图像消除 / 抠图、组图</td>
+    </tr>
+  </table>
+  <div class="note">三家的共同点更值得记住：<b>都吃自然语言句子，都靠「说清保留什么」防跑偏，都建议一次只改一处、小步迭代。</b>把这张表记熟，一套思路可以通用九成。</div>
+</section>
+
+<!-- ========== 4 写法公式 ========== -->
+<section id="s2">
+  <h2>④ 各平台写法公式</h2>
+  <div class="lead">官方文档给出的骨架，照填。</div>
+
+  <div class="card">
+    <div class="card-h"><span class="t">OpenAI：一句话说清「五件事」</span><span class="tag p1">gpt-image-2 / 2.5</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>这张图用来做什么（用途/受众） + 主体是谁、在做什么 + 场景在哪 + 画面风格 + 要排除的东西（写成句子）</pre></div>
+    <div class="note">写实人像的关键：按<b>「真的有人正在拍这张照片」</b>来写——用摄影语言（镜头、光线、构图），并明确要求真实质感（毛孔、皱纹、布料磨损）。务必避免暗示「影棚精修 / 摆拍」的词，官方范例里甚至直接写了 No glamorization, no heavy retouching。</div>
+    <div class="note">需求多时官方建议分段写（scene / subject / details / constraints），比挤成一个长句更好改、更好排查。</div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><span class="t">Nano Banana：六个槽位填满</span><span class="tag p2">gemini-3-pro-image</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>[景别/机位] a [主体，写具体物理细节] in [场景]. [光线描述]. Shot from [机位] with [镜头]. [需要出现的文字，加引号 + 字体描述]. [比例]</pre><br>官方进阶项：比例与画布、相机与光线（如 low-angle shot with shallow depth of field f/1.8、golden hour backlighting）、文字整合（引号 + 字体）、参考图角色分配。</div>
+    <div class="note"><b>参考图要分配角色</b>：「Image A 用于人物姿势，Image B 用于艺术风格，Image C 用于背景环境。」这是它比另两家强的地方，别浪费。</div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><span class="t">即梦：两条官方公式</span><span class="tag p3">Seedream 4.0 / 4.5</span></div>
+    <div class="prompt"><button class="copy">复制</button><pre>文生图 ＝ 连贯自然语言（主体 + 行为 + 环境） ＋ 短词语美学（风格 + 色彩 + 光影 + 构图）
+例：一个女孩撑着伞走在林荫街道上，莫奈油画风格，柔和光影，细腻笔触
+
+编辑图 ＝ 变化动作 ＋ 变化对象 ＋ 变化特征
+动作：移除 / 添加 / 替换 / 参考　对象：主体 / 背景 / 光影 / 色彩　特征：明亮 / 粗糙 / 雨天背景
+例：将图中的头盔变为金色（替换 + 头盔 + 金色）
+
+垫图模式 ＝ 保留什么 ＋ 修改什么 ＋ 要求什么
+例：保留主体人物，背景换成海边，色调温暖，高清无水印</pre></div>
+    <div class="note">官方三条提效建议：<b>① 专业词汇用词源语言</b>（胶片型号、镜头型号写英文更准）；<b>② 写出用途</b>（「用于 PPT 封面」「用于电商主图」）；<b>③ 要生成的文字加引号</b>（标题为“XXX”）。要出组图就加「一系列 / 组图 / 帮我生成几张图」。</div>
+  </div>
+</section>
+
+<!-- ========== 5 锁脸一致性 ========== -->
+<section id="s6">
+  <h2>⑤ 锁脸与一致性（套图专用）</h2>
+  <table>
+    <tr><th style="width:16%">平台</th><th>推荐做法</th></tr>
+    <tr>
+      <td class="col-p1">OpenAI</td>
+      <td>① 编辑时开 <code>input_fidelity="high"</code>；② 多图时给每张图编号并分配角色（Image 1 是内容、Image 2 是风格）；③ 每轮都重申保留项；④ 局部已确认的编辑合成回原图，别靠提示词反复求。</td>
+    </tr>
+    <tr>
+      <td class="col-p2">Nano Banana</td>
+      <td>① 上传参考图，<b>给人物起名</b>（<code>Call this character "Mira"</code>），之后只用名字指代；② <b>不要重描被参考的脸</b>——重描反而会漂移；③ 每轮复用同一套风格关键词；④ 多人在同一画面时，从左到右明确标注各角色位置；⑤ Pro 支持最多 14 张参考图，但同一画面内能保持一致的人物数量有限（应用内约 5 人、API 约 4 人），超出后会开始混淆特征。</td>
+    </tr>
+    <tr>
+      <td class="col-p3">即梦</td>
+      <td>① 上传参考图并明确「保留人物形象特征」；② 多图参考时点明各图职责：<b>「将图 1 中的角色放入图 2 的背景中，参考图 3 的风格进行生成」</b>；③ 要套图就加「一系列 / 组图 / 帮我生成几张图」（最多 15 张，输入图 + 输出图合计不超过 15）。</td>
+    </tr>
+  </table>
+  <div class="note">套图通用流程：先出一张满意的基础图 → 作为参考图锁定 → 之后只改「场景 / 服装 / 姿势」中的一项，<b>不要在提示词里重新描述这个人的长相</b>。</div>
+</section>
+
+<!-- ========== 6 坑与限制 ========== -->
+<section id="s7">
+  <h2>⑥ 各平台坑与限制</h2>
+  <div class="lead">均出自官方文档或官方博客明确提到的问题。</div>
+
+  <h3>三家共同会遇到的</h3>
+  <table>
+    <tr><th style="width:30%">症状</th><th>改法</th></tr>
+    <tr><td>越改越糊 / 细节漂移</td><td>编辑链太长。回<b>原图</b>重跑，不要在原图的副本上继续改；每轮重申保留项。</td></tr>
+    <tr><td>只改了一半</td><td>一次要求太多。拆成多轮：先背景 → 再打光 → 再服装。</td></tr>
+    <tr><td>提示词自相矛盾</td><td>例：同时要求「极简纯白背景」和「密集复杂背景细节」。删掉冲突项。</td></tr>
+    <tr><td>「AI 感」重</td><td>缺物理约束。补三件事：<b>光的方向、阴影走向、一个具体物理细节</b>（木纹、水汽、发丝、织物纹理）。</td></tr>
+    <tr><td>皮肤塑料感</td><td>把「不要塑料皮肤」翻译成正面句式：<b>保留可见的毛孔、细纹与皮肤纹理</b>。</td></tr>
+  </table>
+
+  <h3>各平台特有</h3>
+  <table>
+    <tr><th style="width:16%">平台</th><th>注意</th></tr>
+    <tr>
+      <td class="col-p1">OpenAI</td>
+      <td>① <b>没有负面提示词框</b>，排除项必须写成句子；② 镜头参数只是「外观提示」，不等于真的物理模拟——想要宽幅、暗光、雨夜、霓虹效果，要写清尺度、空气感和颜色，别只丢一个情绪词；③ 画面里的小字、密集信息建议先用 <code>quality="high"</code> 试；④ 真人生成需要参考照片，并确保你有使用其肖像的授权；⑤ 品牌 / 产品 / 艺术家风格，官方建议改为「原创 / 通用」版本。</td>
+    </tr>
+    <tr>
+      <td class="col-p2">Nano Banana</td>
+      <td>① <b>不认负面提示词</b>，所有排除项都要转成正向描述；② 小型或很长的图中文字仍会出错，文案要短；③ 长编辑链会漂移，每几步要重申固定项；④ <b>水印是永久的</b>，不要承诺任何人「干净无水印」；⑤ 一致性功能是给自己的角色和产品用的，不可用于冒充真人；⑥ 图表、标签、地图这类「事实性」文字可能是错的，需要逐项核对。</td>
+    </tr>
+    <tr>
+      <td class="col-p3">即梦</td>
+      <td>① 编辑指令要<b>短而准</b>，写成长篇文学描写反而降低准确度；② 需要保持一致性时<b>必须上传参考图</b>，纯文字描述撑不住；③ 组图数量受「输入图 + 输出图 ≤ 15 张」限制；④ 需要生成的文字务必加引号，否则可能被当成描述而不是文案；⑤ 局部重绘、扩图、消除、抠图在智能画布里有现成按钮，比写提示词更快也更可控。</td>
+    </tr>
+  </table>
+
+</section>
+
+<footer>
+    依据：OpenAI《Image prompting》与 GPT Image Cookbook、Google《7 tips to get the most out of Nano Banana Pro》、火山引擎《即梦AI-图片生成4.0-产品介绍》、BytePlus《Seedream 4.0-4.5 prompt guide》。整理 2026-09-25。<br>页首图片为 AI 生成的视觉示意。
+  </footer>
+
+</div>
+
+<div class="mobile-actionbar" aria-label="风格库快捷操作"><button id="mobileSearch" type="button" aria-label="前往搜索">⌕ <span>搜索</span></button><button id="mobileFilter" type="button" aria-label="打开筛选条件">☷ <span>筛选</span><i id="activeFilterDot" aria-hidden="true"></i></button><button id="mobileTheme" type="button" aria-label="切换深色或浅色主题">☾</button><span id="mobileCount">106 条</span></div>
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<button id="jump" type="button" title="回到筛选面板（按 F 键同效）">筛选 · <b id="jumpCount">106</b> 条</button>
+<button id="theme" title="切换深色 / 浅色（按 T 键同效）" aria-label="切换深色或浅色主题">☾</button>
+<button id="top" title="返回顶部" aria-label="返回顶部">↑</button>
+
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
