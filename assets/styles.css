@@ -484,4 +484,9 @@ footer{margin-top:90px}
   .mobile-actionbar button{padding:0 8px}
   .mobile-actionbar #mobileCount{font-size:10px}
 }
+.copy-row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;margin-top:14px}
+.copy-hint{flex:1 1 auto;min-width:0;color:var(--ink-3);font-size:11.5px;line-height:1.6}
+.copy-row .copy{flex:0 0 auto;align-self:auto;order:0;margin:0}
+.style-card .copy-row{order:3}
+#s5 .copy-row,#s2 .copy-row{margin:0 0 10px;padding-top:10px}
 @media(prefers-reduced-motion:reduce){.hero-visual img{transition:none}}

@@ -167,6 +167,16 @@
   };
 
   var cards = Array.prototype.slice.call(document.querySelectorAll('.style-card'));
+  function addCopyRow(copy, hint, container){
+    var row = document.createElement('div');
+    row.className = 'copy-row';
+    var label = document.createElement('span');
+    label.className = 'copy-hint';
+    label.textContent = hint;
+    row.appendChild(label);
+    row.appendChild(copy);
+    container.appendChild(row);
+  }
   cards.forEach(function(c){
     var tEl = c.querySelector('.card-h .t');
     c.dataset.id = tEl ? tEl.textContent.trim().slice(0, 3) : '';
@@ -205,9 +215,25 @@
       if(copy){
         copy.type = 'button';
         copy.setAttribute('aria-label', '复制' + (tEl ? tEl.textContent.trim() : '提示词'));
-        c.appendChild(copy);
+        addCopyRow(copy, '复制给生图模型，可生成同款场景；上传自己的照片，也可改成同款写真。', c);
       }
     }
+  });
+
+  document.querySelectorAll('#s5 .prompt, #s2 .prompt').forEach(function(prompt){
+    var copy = prompt.querySelector('.copy');
+    if(!copy) return;
+    var hint = prompt.closest('#s5')
+      ? '上传原图后复制给生图模型，按所选需求修改照片。'
+      : '复制公式，填入具体内容后再发送给生图模型。';
+    var row = document.createElement('div');
+    row.className = 'copy-row';
+    var label = document.createElement('span');
+    label.className = 'copy-hint';
+    label.textContent = hint;
+    row.appendChild(label);
+    row.appendChild(copy);
+    prompt.insertBefore(row, prompt.firstChild);
   });
 
   var countEl = document.getElementById('count');
@@ -375,7 +401,7 @@
     var btn = e.target.closest('.copy');
     if(!btn) return;
     var card = btn.closest('.style-card');
-    var pre = card ? card.querySelector('pre') : btn.parentElement.querySelector('pre');
+    var pre = card ? card.querySelector('pre') : btn.closest('.prompt').querySelector('pre');
     if(!pre) return;
     copyText(pre.innerText.trim()).then(function(){
       var old = btn.textContent;
