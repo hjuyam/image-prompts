@@ -1,4 +1,7 @@
 (function(){
+  var copyrightYear = document.getElementById('copyright-year');
+  if(copyrightYear) copyrightYear.textContent = new Date().getFullYear();
+
   var sex = 'all', cat = 'all', shot = 'all', plat = 'all', q = '', onlyStar = false;
 
   var PLAT_NAME = { oai: 'OpenAI', nb: 'Nano Banana', jm: '即梦' };

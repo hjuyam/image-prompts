@@ -398,6 +398,7 @@ h3 .hint{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;f
 table{border-radius:4px}
 th{font-size:13px;background:var(--card-2)}
 footer{margin-top:90px}
+.copyright{display:block;margin-top:18px;color:var(--ink-2);font-size:12px;letter-spacing:.02em}
 #top,#theme,#jump{border-radius:4px}
 .mobile-actionbar{display:none}
 .toast{position:fixed;left:50%;bottom:28px;z-index:110;transform:translate(-50%,16px);opacity:0;pointer-events:none;background:var(--ink);color:var(--card);padding:10px 16px;border-radius:5px;box-shadow:var(--shadow-l);font-size:13px;transition:opacity .2s,transform .2s}
