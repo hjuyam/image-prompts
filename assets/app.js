@@ -356,7 +356,9 @@
   var links = document.querySelectorAll('nav.topbar a');
   var secs = [];
   links.forEach(function(a){
-    var el = document.querySelector(a.getAttribute('href'));
+    var href = a.getAttribute('href');
+    if(!href || href.charAt(0) !== '#') return;
+    var el = document.querySelector(href);
     if(el) secs.push({a:a, el:el});
   });
   function highlight(){
